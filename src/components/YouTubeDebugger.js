@@ -25,7 +25,7 @@ class YouTubeDebugger extends React.Component {
   resolutionSitting = ()=>{
       this.setState({
           settings: { ...this.state.settings,
-          vidoe: { 
+          vidoe: {
           resolution: '720p'
           }
           }
