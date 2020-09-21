@@ -1,9 +1,9 @@
 import React from 'react';
- 
+
 class YouTubeDebugger extends React.Component {
   constructor() {
     super();
- 
+
     this.state = {
        errors: [],
   user: null,
@@ -17,7 +17,7 @@ class YouTubeDebugger extends React.Component {
   }
   bitrateSitting = ()=>{
       this.setState({
-              settings: {...this.state.settings, 
+              settings: {...this.state.settings,
               bitrate:12
           }
       })
@@ -27,11 +27,11 @@ class YouTubeDebugger extends React.Component {
           settings: { ...this.state.settings,
           video: { ...this.state.settings.video,
           resolution: '720p'
-          } 
+          }
           }
       });
   };
- 
+
   render() {
     return (
       <div>
@@ -41,6 +41,6 @@ class YouTubeDebugger extends React.Component {
     );
   }
 }
- 
+
 export default YouTubeDebugger;
  
